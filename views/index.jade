@@ -1,0 +1,27 @@
+h3 bid
+ul.auction
+  li
+    title:
+    span.title
+      != model.title
+  li
+    price:
+    span.price
+      != model.price
+  li
+    time:
+    span.time
+      != model.time
+  li
+    bidder:
+    span.bidder
+      != model.bidder
+  li
+    bids:
+    span.bids
+      != model.bids
+- if(authenticated) {
+  form.bid(method="post", action="/bid")
+    input(type="hidden", name="id", value="bid")
+    input(type="submit", name="submit", value="bid")
+- }

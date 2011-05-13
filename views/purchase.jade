@@ -1,0 +1,112 @@
+h3 buy bids
+form.purchase(method="post", action="/purchase")
+  input(type="hidden", name="id", value='purchase')
+  fieldset
+    legend bid pack
+    input(type="radio", name="bids", value="50")
+    label 50 @ $30.0
+    input(type="radio", name="bids", value="100")
+    label 100 @ $60.0
+    input(type="radio", name="bids", value="250")
+    label 250 @ $150.0
+    input(type="radio", name="bids", value="500")
+    label 500 @ $300.0
+  fieldset
+    legend payment method
+    input(type="radio", name="method", value="paypal")
+    label paypal
+    input(type="radio", name="method", value="credit")
+    label credit
+  fieldset
+    legend billing address
+    input(type="text", name="name", placeholder="name")
+    input(type="text", name="address1", placeholder="address1")
+    input(type="text", name="address2", placeholder="address2")
+    input(type="text", name="city", placeholder="city")
+    input(type="text", name="zip", placeholder="zip")
+    select(name="state")
+      option(value="AL", label="Alabama") Alabama
+      option(value="AK", label="Alaska") Alaska
+      option(value="AZ", label="Arizona") Arizona
+      option(value="AR", label="Arkansas") Arkansas
+      option(value="CA", label="California") California
+      option(value="CO", label="Colorado") Colorado
+      option(value="CT", label="Connecticut") Connecticut
+      option(value="DE", label="Delaware") Delaware
+      option(value="DC", label="District of Columbia") District Of Columbia
+      option(value="FL", label="Florida") Florida
+      option(value="GA", label="Georgia") Georgia
+      option(value="HI", label="Hawaii") Hawaii
+      option(value="ID", label="Idaho") Idaho
+      option(value="IL", label="Illinois") Illinois
+      option(value="IN", label="Indiana") Indiana
+      option(value="IA", label="Iowa") Iowa
+      option(value="KS", label="Kansas") Kansas
+      option(value="KY", label="Kentucky") Kentucky
+      option(value="LA", label="Louisiana") Louisiana
+      option(value="ME", label="Maine") Maine
+      option(value="MD", label="Maryland") Maryland
+      option(value="MA", label="Massachusetts") Massachusetts
+      option(value="MI", label="Michigan") Michigan
+      option(value="MN", label="Minnesota") Minnesota
+      option(value="MS", label="Mississippi") Mississippi
+      option(value="MO", label="Missouri") Missouri
+      option(value="MT", label="Montana") Montana
+      option(value="NE", label="Nebraska") Nebraska
+      option(value="NV", label="Nevada") Nevada
+      option(value="NH", label="New Hampshire") New Hampshire
+      option(value="NJ", label="New Jersey") New Jersey
+      option(value="NM", label="New Mexico") New Mexico
+      option(value="NY", label="New York") New York
+      option(value="NC", label="North Carolina") North Carolina
+      option(value="ND", label="North Dakota") North Dakota
+      option(value="OH", label="Ohio") Ohio
+      option(value="OK", label="Oklahoma") Oklahoma
+      option(value="OR", label="Oregon") Oregon
+      option(value="PA", label="Pennsylvania") Pennsylvania
+      option(value="RI", label="Rhode Island") Rhode Island
+      option(value="SC", label="South Carolina") South Carolina
+      option(value="SD", label="South Dakota") South Dakota
+      option(value="TN", label="Tennessee") Tennessee
+      option(value="TX", label="Texas") Texas
+      option(value="UT", label="Utah") Utah
+      option(value="VT", label="Vermont") Vermont
+      option(value="VA", label="Virginia") Virginia
+      option(value="WA", label="Washington") Washington
+      option(value="WV", label="West Virginia") West Virginia
+      option(value="WI", label="Wisconsin") Wisconsin
+      option(value="WY", label="Wyoming") Wyoming
+    select(name="country")
+      option(value="USA", label="United States") United States    
+  fieldset
+    legend credit card
+    select(name="type")
+      option(value="mastercard") mastercard
+      option(value="visa") visa
+    input(type="text", name="number", placeholder="number")
+    select(name="month")
+      option(value="01") 01
+      option(value="02") 02
+      option(value="03") 03
+      option(value="04") 04
+      option(value="05") 05
+      option(value="06") 06
+      option(value="07") 07
+      option(value="08") 08
+      option(value="09") 09
+      option(value="10") 10
+      option(value="11") 11
+      option(value="12") 12
+    select(name="year")
+      option(value="2010") 2010
+      option(value="2011") 2011
+      option(value="2012") 2012
+      option(value="2013") 2013
+      option(value="2014") 2014
+      option(value="2015") 2015
+      option(value="2016") 2016
+      option(value="2017") 2017
+      option(value="2018") 2018
+      option(value="2019") 2019
+      option(value="2020") 2020
+  input(type="submit", name="purchase", value="purchase")
